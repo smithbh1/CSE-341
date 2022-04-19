@@ -1,0 +1,24 @@
+{
+  "name": "cse-341",
+  "version": "1.0.0",
+  "description": "cs341 work",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smithbh1/CSE-341.git"
+  },
+  "author": "Brian Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smithbh1/CSE-341/issues"
+  },
+  "homepage": "https://github.com/smithbh1/CSE-341#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "save": "^2.4.0"
+  }
+}
