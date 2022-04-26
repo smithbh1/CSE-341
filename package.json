@@ -20,6 +20,7 @@
   "homepage": "https://github.com/smithbh1/CSE-341#readme",
   "dependencies": {
     "express": "^4.17.3",
+    "mongodb": "^4.5.0",
     "save": "^2.4.0"
   },
   "devDependencies": {
