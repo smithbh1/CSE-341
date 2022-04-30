@@ -1,13 +1,26 @@
-const mongoose = require('mongoose');
+   
 const dotenv = require('dotenv');
 dotenv.config()
 
+const MongoClient = require('mongodb').MongoClient;
 
-const URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.b8eds.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+let _client;
+let _collection;
 
-const connectDB = async () =>{
- await mongoose.connect(URI);
- console.log('db connected')
+const initDatabase = () => {
+
+    const URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.b8eds.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+    MongoClient.connect(URI, (err, client) => {
+        if(err) throw err;
+        _client = client;
+        _collection = client.db("contacts").collection("contacts");
+        console.log("DB Connected Successfully")
+});
+};
+const getCollection = () => {
+    return _collection;
 }
 
-module.exports = connectDB;
+
+
+module.exports = { initDatabase, getCollection };
