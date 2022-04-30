@@ -9,7 +9,7 @@ let _collection;
 
 const initDatabase = () => {
 
-    const URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.b8eds.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+    const URI = process.env.MONGO_DB;
     MongoClient.connect(URI, (err, client) => {
         if(err) throw err;
         _client = client;
