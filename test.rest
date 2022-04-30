@@ -3,3 +3,11 @@ GET http://localhost:3000/contacts
 ###
 
 GET http://localhost:3000/contacts/626c8837aa358dc074308a8a
+
+###
+
+GET https://fathomless-peak-71807.herokuapp.com/contacts
+
+###
+
+GET https://fathomless-peak-71807.herokuapp.com/contacts/626c8837aa358dc074308a8a
