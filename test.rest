@@ -11,3 +11,27 @@ GET https://fathomless-peak-71807.herokuapp.com/contacts
 ###
 
 GET https://fathomless-peak-71807.herokuapp.com/contacts/626c8837aa358dc074308a8a
+
+## Create Contact
+POST http://fathomless-peak-71807.herokuapp.com/contacts HTTP/1.1
+
+{
+    "firstName" : "Brian",
+    "lastName" : "Smith",
+    "email" : "myEmail@gmail.com",
+    "favoriteColor" : "blue",
+    "birthday" : "08/15/1996"
+}
+
+### PUT request
+PUT http://fathomless-peak-71807.herokuapp.com/contacts/626c8837aa358dc074308a8a HTTP/1.1
+
+{
+  "firstName": "Megan",
+  "lastName": "Smith",
+  "email": "megansmith@test.com",
+  "favoriteColor": "Black",
+  "birthday": "07/12/99"
+}
+
+DELETE http://fathomless-peak-71807.herokuapp.com/contacts/626c8837aa358dc074308a8a HTTP/1.1

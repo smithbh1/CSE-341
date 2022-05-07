@@ -24,4 +24,10 @@ routes.get('/:id', (req, res) =>{
    
 });
 
+router.post('/', crud.createContact);
+
+router.put('/:id', crud.updateContact);
+
+router.delete('/:id', crud.deleteContact);
+
 module.exports = routes;
