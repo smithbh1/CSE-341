@@ -29,11 +29,11 @@ PUT http://localhost:3000/contacts/626c8837aa358dc074308a8a HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName": "Megan",
-  "lastName": "Smith",
-  "email": "megansmith@test.com",
-  "favoriteColor": "Black",
-  "birthday": "07/12/99"
+    "firstName": "Megan",
+    "lastName": "Smith",
+    "email": "megansmith@test.com",
+    "favoriteColor": "Black",
+    "birthday": "07/12/99"
 }
 
 ###
