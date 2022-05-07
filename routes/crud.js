@@ -30,7 +30,7 @@ const updateContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db()
-    .collection('contacts')
+    .getCollection('contacts')
     .replaceOne({ _id: userId }, contact);
   console.log(response);
   if (response.modifiedCount > 0) {
