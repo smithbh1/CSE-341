@@ -1,7 +1,7 @@
 const routes = require('express').Router();
 const connectDB = require('../DB/connection')
 const ObjectId = require('mongodb').ObjectId;
-
+const crud = require('./crud')
 routes.get('/', (req, res) =>{
 
     const results = connectDB.getCollection("contacts").find();
@@ -24,10 +24,10 @@ routes.get('/:id', (req, res) =>{
    
 });
 
-router.post('/', crud.createContact);
+routes.post('/', crud.createContact);
 
-router.put('/:id', crud.updateContact);
+routes.put('/:id', crud.updateContact);
 
-router.delete('/:id', crud.deleteContact);
+routes.delete('/:id', crud.deleteContact);
 
 module.exports = routes;
