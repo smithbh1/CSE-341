@@ -20,12 +20,16 @@
   "homepage": "https://github.com/smithbh1/CSE-341#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "express": "^4.17.3",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.1",
+    "prettier": "^2.6.2",
     "save": "^2.4.0"
   },
   "devDependencies": {
+    "eslint": "^8.15.0",
     "nodemon": "^2.0.15"
   },
   "engines": {
