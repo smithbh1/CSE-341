@@ -1,7 +1,11 @@
 const routes = require('express').Router();
-const connectDB = require('../DB/connection')
+const connectDB = require('../DB/connection');
 const ObjectId = require('mongodb').ObjectId;
-const crud = require('./crud')
+const crud = require('./crud');
+const bodyParser = require('body-parser');
+
+routes.use(bodyParser.json());
+
 routes.get('/', (req, res) =>{
 
     const results = connectDB.getCollection("contacts").find();
