@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Contacts API to perform CRUD operations in Mongodb database'
   },
-  host: 'localhost:3000',
+  host: 'fathomless-peak-71807.herokuapp.com',
   basePath: "/",
   schemes: ['http'],
 };

@@ -5,7 +5,7 @@
     "description": "Contacts API to perform CRUD operations in Mongodb database",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "fathomless-peak-71807.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "http"
