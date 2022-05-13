@@ -7,7 +7,7 @@ const doc = {
   },
   host: 'fathomless-peak-71807.herokuapp.com',
   basePath: "/",
-  schemes: ['http'],
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
